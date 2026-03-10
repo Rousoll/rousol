@@ -3,67 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rousol - Solar Energy Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rousol Sabobeh | AI Developer</title>
+    
     <script src="https://cdn.pulse.is/livechat/loader.js" data-live-chat-id="69a9e9e8b7fb4f5ee00bbc77" async></script>
+
+    <style>
+        :root {
+            --primary: #007AFF; /* Tech Blue */
+            --dark: #0A0A0B;
+            --accent: #5E5CE6;
+            --text-light: #f5f5f7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; }
+        
+        body { background-color: var(--dark); color: var(--text-light); line-height: 1.6; overflow-x: hidden; }
+
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+
+        /* Navigation */
+        header { 
+            padding: 20px 0; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -1px; }
+        .logo span { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            background: radial-gradient(circle at center, #1c1c1e 0%, #0a0a0b 100%);
+        }
+
+        .hero-content h1 { font-size: 4rem; margin-bottom: 1rem; letter-spacing: -2px; }
+        .hero-content p { font-size: 1.2rem; color: #a1a1a6; max-width: 700px; margin: 0 auto 2rem; }
+
+        /* Sections */
+        section { padding: 100px 0; }
+        h2 { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+
+        /* Experience Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 40px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover { 
+            background: rgba(255, 255, 255, 0.08); 
+            transform: translateY(-10px); 
+            border-color: var(--primary);
+        }
+
+        .card h3 { color: var(--primary); margin-bottom: 10px; }
+        .card span { font-size: 0.9rem; color: #888; display: block; margin-bottom: 15px; }
+
+        /* CTA Button */
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: var(--accent); transform: scale(1.05); }
+
+        footer { text-align: center; padding: 50px 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #666; }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <nav class="container">
-            <div class="logo">ROU<span>SOL</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo">Rousol<span>.AI</span></div>
+            <a href="#contact" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">Hire Me</a>
         </nav>
     </header>
 
     <section class="hero">
         <div class="container hero-content">
-            <h1>Switch to Clean Energy with Rousol</h1>
-            <p>Sustainable solar solutions for a brighter, greener future. Save on bills and save the planet.</p>
-            <a href="#contact" class="btn-primary">Get a Quote</a>
+            <h1>Rousol Sabobeh</h1>
+            <p>AI Developer turning complex ideas into practical, intelligent solutions that enhance business efficiency and innovation.</p>
+            <a href="#about" class="btn">Explore My Work</a>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Residential Solar</h3>
-                    <p>Custom solar panel installations for your home to reduce energy costs.</p>
-                </div>
-                <div class="card">
-                    <h3>Commercial Systems</h3>
-                    <p>Large-scale energy solutions for businesses and industrial facilities.</p>
-                </div>
-                <div class="card">
-                    <h3>Maintenance</h3>
-                    <p>Regular cleaning and performance checks to keep your system at 100%.</p>
-                </div>
+    <section id="about" class="container">
+        <h2>Who is Rousol?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AI Specialist</h3>
+                <span>KAUST Academy</span>
+                <p>Focused on Machine Learning, Deep Learning, Computer Vision, and NLP with practical AI implementation.</p>
+            </div>
+            <div class="card">
+                <h3>Founder @ AI-Via</h3>
+                <span>Misk Launchpad 8.1</span>
+                <p>Gained skills in entrepreneurship and innovation, applying problem-solving frameworks to build AI-Via.</p>
+            </div>
+            <div class="card">
+                <h3>Computer Scientist</h3>
+                <span>Bachelor's Degree</span>
+                <p>Gained a strong foundation in programming and software development to build scalable technology solutions.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" style="text-align: center;">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="How can we help you?"></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
+            <h2>Let's build something intelligent</h2>
+            <p style="margin-bottom: 30px; color: #a1a1a6;">Ready to transform your ideas into real-world AI applications?</p>
+            <a href="mailto:contact@yourdomain.com" class="btn">Get In Touch</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Rousol Solar. Powered by SendPulse.</p>
+        <p>&copy; 2026 Rousol Sabobeh.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
